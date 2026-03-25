@@ -34,6 +34,8 @@ Run this in PowerShell.
 wsl bash -lc "bash <(curl -fsSL https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.sh)"
 ```
 
+You will need a GitHub account. If GitHub CLI (`gh`) is not installed yet, the bootstrap script will detect a supported package manager, offer to install it, and then walk you through GitHub sign-in. On Windows, this happens inside WSL.
+
 You will be prompted for:
 - Setup mode:
   - Recommended (Online-only, no local clone): setup script will either:

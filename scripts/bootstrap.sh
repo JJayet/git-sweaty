@@ -266,19 +266,159 @@ require_cmd() {
   have_cmd "$1" || fail "Missing required command: $1"
 }
 
+run_with_optional_sudo() {
+  if [[ "$(id -u)" -eq 0 ]]; then
+    "$@"
+    return $?
+  fi
+  if have_cmd sudo; then
+    sudo "$@"
+    return $?
+  fi
+  return 1
+}
+
+install_gh_with_package_manager() {
+  local method="${1:-}"
+
+  case "$method" in
+    brew)
+      info "Installing GitHub CLI with Homebrew..."
+      brew install gh
+      ;;
+    apt-get)
+      info "Installing GitHub CLI with apt-get..."
+      run_with_optional_sudo apt-get update || return 1
+      run_with_optional_sudo apt-get install -y gh
+      ;;
+    dnf)
+      info "Installing GitHub CLI with dnf..."
+      run_with_optional_sudo dnf install -y gh
+      ;;
+    yum)
+      info "Installing GitHub CLI with yum..."
+      run_with_optional_sudo yum install -y gh
+      ;;
+    pacman)
+      info "Installing GitHub CLI with pacman..."
+      run_with_optional_sudo pacman -Sy --noconfirm github-cli
+      ;;
+    zypper)
+      info "Installing GitHub CLI with zypper..."
+      run_with_optional_sudo zypper --non-interactive install gh
+      ;;
+    apk)
+      info "Installing GitHub CLI with apk..."
+      run_with_optional_sudo apk add gh
+      ;;
+    snap)
+      info "Installing GitHub CLI with snap..."
+      run_with_optional_sudo snap install gh --classic
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+detect_gh_install_method() {
+  local candidate
+  for candidate in brew apt-get dnf yum pacman zypper apk snap; do
+    if have_cmd "$candidate"; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+  return 1
+}
+
+gh_install_method_label() {
+  case "${1:-}" in
+    brew) printf '%s\n' "Homebrew" ;;
+    apt-get) printf '%s\n' "apt-get" ;;
+    dnf) printf '%s\n' "dnf" ;;
+    yum) printf '%s\n' "yum" ;;
+    pacman) printf '%s\n' "pacman" ;;
+    zypper) printf '%s\n' "zypper" ;;
+    apk) printf '%s\n' "apk" ;;
+    snap) printf '%s\n' "snap" ;;
+    *) printf '%s\n' "$1" ;;
+  esac
+}
+
+wait_for_github_account_ready() {
+  info "Open https://github.com/signup in your browser and create your GitHub account."
+  info "Leave this terminal open and come back here when you are done."
+
+  while true; do
+    if prompt_yes_no "Did you set up your GitHub account and are you ready to continue?" "Y"; then
+      return 0
+    fi
+
+    if prompt_yes_no "Keep waiting here while you finish GitHub signup?" "Y"; then
+      info "No problem. Complete signup in your browser, then answer yes here."
+      continue
+    fi
+
+    fail "GitHub account is required to continue. Re-run bootstrap after signup: https://github.com/signup"
+  done
+}
+
+ensure_gh_installed() {
+  local install_method install_label
+
+  if have_cmd gh; then
+    return 0
+  fi
+
+  info ""
+  info "GitHub CLI ('gh') is required so setup can create or select a repository, store secrets, and configure GitHub Pages."
+  info "You will need a GitHub account before continuing."
+  if is_wsl; then
+    info "Windows note: this setup runs inside WSL, so any automatic GitHub CLI install happens inside your WSL Linux environment."
+  fi
+  if ! prompt_yes_no "Do you already have a GitHub account?" "Y"; then
+    wait_for_github_account_ready
+  fi
+
+  install_method="$(detect_gh_install_method || true)"
+  if [[ -n "$install_method" ]]; then
+    install_label="$(gh_install_method_label "$install_method")"
+    info "Detected package manager for automatic GitHub CLI install: ${install_label}."
+  else
+    warn "No supported package manager was detected for automatic GitHub CLI install."
+    warn "Supported automatic install paths: Homebrew, apt-get, dnf, yum, pacman, zypper, apk, snap."
+  fi
+
+  if prompt_yes_no "Try to install GitHub CLI ('gh') automatically now?" "Y"; then
+    if [[ -n "$install_method" ]] && install_gh_with_package_manager "$install_method" && have_cmd gh; then
+      info "GitHub CLI installed."
+      return 0
+    fi
+    if [[ -n "$install_method" ]]; then
+      warn "Automatic GitHub CLI installation with ${install_label} did not succeed."
+    else
+      warn "Automatic GitHub CLI installation is not available in this environment."
+    fi
+  fi
+
+  fail "GitHub CLI ('gh') is required. Install it from https://cli.github.com/ and re-run bootstrap."
+}
+
 gh_is_authenticated() {
   gh auth status >/dev/null 2>&1
 }
 
 ensure_gh_auth() {
-  require_cmd gh
+  ensure_gh_installed
   if gh_is_authenticated; then
     return 0
   fi
 
   info "GitHub CLI is not authenticated."
-  if prompt_yes_no "Run gh auth login now?" "Y"; then
-    gh auth login
+  info "If you do not have a GitHub account yet, create one first: https://github.com/signup"
+  if prompt_yes_no "Run GitHub sign-in now? This will request the repo and workflow permissions needed for setup." "Y"; then
+    gh auth login --web --git-protocol https --scopes repo,workflow
   fi
 
   gh_is_authenticated || fail "GitHub CLI auth is required. Run 'gh auth login' and re-run bootstrap."

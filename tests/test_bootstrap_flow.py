@@ -23,48 +23,22 @@ class BootstrapFlowTests(unittest.TestCase):
         git_log = os.path.join(root, "git.log")
         gh_log = os.path.join(root, "gh.log")
         py_log = os.path.join(root, "python.log")
-
-        _write_executable(
-            os.path.join(fake_bin, "git"),
-            """#!/usr/bin/env bash
-set -euo pipefail
-echo "$*" >> "${FAKE_GIT_LOG}"
-if [[ "${1:-}" == "rev-parse" && "${2:-}" == "--is-inside-work-tree" ]]; then
-  if [[ "${FAKE_GIT_INSIDE_WORKTREE:-0}" == "1" ]]; then
-    echo "true"
-    exit 0
-  fi
-  exit 1
-fi
-if [[ "${1:-}" == "rev-parse" && "${2:-}" == "--show-toplevel" ]]; then
-  if [[ -n "${FAKE_GIT_TOPLEVEL:-}" ]]; then
-    echo "${FAKE_GIT_TOPLEVEL}"
-    exit 0
-  fi
-  exit 1
-fi
-if [[ "${1:-}" == "clone" ]]; then
-  target="${3:-}"
-  mkdir -p "${target}/.git" "${target}/scripts"
-  : > "${target}/scripts/setup_auth.py"
-  exit 0
-fi
-if [[ "${1:-}" == "-C" ]]; then
-  exit 0
-fi
-exit 0
-""",
-        )
-
-        _write_executable(
-            os.path.join(fake_bin, "gh"),
-            """#!/usr/bin/env bash
+        gh_script = """#!/usr/bin/env bash
 set -euo pipefail
 echo "$*" >> "${FAKE_GH_LOG}"
 if [[ "${1:-}" == "auth" && "${2:-}" == "status" ]]; then
-  exit 0
+  if [[ -n "${FAKE_GH_AUTH_STATE_FILE:-}" ]]; then
+    if [[ -f "${FAKE_GH_AUTH_STATE_FILE}" ]]; then
+      exit 0
+    fi
+    exit 1
+  fi
+  exit "${FAKE_GH_AUTH_STATUS_EXIT:-0}"
 fi
 if [[ "${1:-}" == "auth" && "${2:-}" == "login" ]]; then
+  if [[ -n "${FAKE_GH_AUTH_STATE_FILE:-}" ]]; then
+    : > "${FAKE_GH_AUTH_STATE_FILE}"
+  fi
   exit 0
 fi
 if [[ "${1:-}" == "api" && "${2:-}" == "user" ]]; then
@@ -118,6 +92,57 @@ if [[ "${1:-}" == "repo" && "${2:-}" == "list" ]]; then
   exit 0
 fi
 exit 0
+"""
+        gh_template = os.path.join(root, "gh-template")
+        _write_executable(gh_template, gh_script)
+
+        _write_executable(
+            os.path.join(fake_bin, "git"),
+            """#!/usr/bin/env bash
+set -euo pipefail
+echo "$*" >> "${FAKE_GIT_LOG}"
+if [[ "${1:-}" == "rev-parse" && "${2:-}" == "--is-inside-work-tree" ]]; then
+  if [[ "${FAKE_GIT_INSIDE_WORKTREE:-0}" == "1" ]]; then
+    echo "true"
+    exit 0
+  fi
+  exit 1
+fi
+if [[ "${1:-}" == "rev-parse" && "${2:-}" == "--show-toplevel" ]]; then
+  if [[ -n "${FAKE_GIT_TOPLEVEL:-}" ]]; then
+    echo "${FAKE_GIT_TOPLEVEL}"
+    exit 0
+  fi
+  exit 1
+fi
+if [[ "${1:-}" == "clone" ]]; then
+  target="${3:-}"
+  mkdir -p "${target}/.git" "${target}/scripts"
+  : > "${target}/scripts/setup_auth.py"
+  exit 0
+fi
+if [[ "${1:-}" == "-C" ]]; then
+  exit 0
+fi
+exit 0
+""",
+        )
+
+        _write_executable(
+            os.path.join(fake_bin, "gh"),
+            gh_script,
+        )
+
+        _write_executable(
+            os.path.join(fake_bin, "brew"),
+            """#!/usr/bin/env bash
+set -euo pipefail
+if [[ "${1:-}" == "install" && "${2:-}" == "gh" ]]; then
+  cp "${FAKE_GH_TEMPLATE}" "$(dirname "$0")/gh"
+  chmod +x "$(dirname "$0")/gh"
+  exit 0
+fi
+exit 1
 """,
         )
 
@@ -385,6 +410,178 @@ exit 0
             with open(py_log, "r", encoding="utf-8") as f:
                 py_calls = f.read()
             self.assertIn(f"{local_clone}|scripts/setup_auth.py --source garmin", py_calls)
+
+    def test_bootstrap_can_install_missing_gh_and_prompt_for_sign_in(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            fake_bin, git_log, py_log = self._make_fake_bin(tmpdir)
+            local_clone = os.path.join(tmpdir, "local-clone")
+            nested_dir = os.path.join(local_clone, "nested")
+            os.makedirs(os.path.join(local_clone, ".git"), exist_ok=True)
+            os.makedirs(os.path.join(local_clone, "scripts"), exist_ok=True)
+            os.makedirs(nested_dir, exist_ok=True)
+            with open(os.path.join(local_clone, "scripts", "setup_auth.py"), "w", encoding="utf-8") as f:
+                f.write("# test\n")
+            os.remove(os.path.join(fake_bin, "gh"))
+
+            gh_log = os.path.join(tmpdir, "gh.log")
+            auth_state_file = os.path.join(tmpdir, "gh-authenticated")
+            env = os.environ.copy()
+            env["PATH"] = f"{fake_bin}:/usr/bin:/bin:/usr/sbin:/sbin"
+            env["FAKE_GIT_LOG"] = git_log
+            env["FAKE_GH_LOG"] = gh_log
+            env["FAKE_GH_TEMPLATE"] = os.path.join(tmpdir, "gh-template")
+            env["FAKE_GH_AUTH_STATE_FILE"] = auth_state_file
+            env["FAKE_PY_LOG"] = py_log
+            env["FAKE_GIT_INSIDE_WORKTREE"] = "1"
+            env["FAKE_GIT_TOPLEVEL"] = local_clone
+
+            proc = subprocess.run(
+                ["bash", BOOTSTRAP_PATH],
+                input="y\ny\ny\ny\n",
+                text=True,
+                capture_output=True,
+                cwd=nested_dir,
+                env=env,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=f"{proc.stdout}\n{proc.stderr}")
+
+            output = f"{proc.stdout}\n{proc.stderr}"
+            self.assertIn("Detected package manager for automatic GitHub CLI install: Homebrew.", output)
+            self.assertIn("GitHub CLI installed.", output)
+            self.assertIn("GitHub CLI is not authenticated.", output)
+
+            with open(gh_log, "r", encoding="utf-8") as f:
+                gh_calls = f.read()
+            self.assertIn("auth login --web --git-protocol https --scopes repo,workflow", gh_calls)
+
+            with open(py_log, "r", encoding="utf-8") as f:
+                py_calls = f.read()
+            self.assertIn(f"{local_clone}|scripts/setup_auth.py", py_calls)
+
+    def test_bootstrap_stops_missing_gh_when_user_has_no_github_account(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            fake_bin, git_log, py_log = self._make_fake_bin(tmpdir)
+            local_clone = os.path.join(tmpdir, "local-clone")
+            nested_dir = os.path.join(local_clone, "nested")
+            os.makedirs(os.path.join(local_clone, ".git"), exist_ok=True)
+            os.makedirs(os.path.join(local_clone, "scripts"), exist_ok=True)
+            os.makedirs(nested_dir, exist_ok=True)
+            with open(os.path.join(local_clone, "scripts", "setup_auth.py"), "w", encoding="utf-8") as f:
+                f.write("# test\n")
+            os.remove(os.path.join(fake_bin, "gh"))
+
+            env = os.environ.copy()
+            env["PATH"] = f"{fake_bin}:/usr/bin:/bin:/usr/sbin:/sbin"
+            env["FAKE_GIT_LOG"] = git_log
+            env["FAKE_GH_LOG"] = os.path.join(tmpdir, "gh.log")
+            env["FAKE_GH_TEMPLATE"] = os.path.join(tmpdir, "gh-template")
+            env["FAKE_PY_LOG"] = py_log
+            env["FAKE_GIT_INSIDE_WORKTREE"] = "1"
+            env["FAKE_GIT_TOPLEVEL"] = local_clone
+
+            proc = subprocess.run(
+                ["bash", BOOTSTRAP_PATH],
+                input="y\nn\nn\nn\n",
+                text=True,
+                capture_output=True,
+                cwd=nested_dir,
+                env=env,
+                check=False,
+            )
+            self.assertNotEqual(proc.returncode, 0, msg=f"{proc.stdout}\n{proc.stderr}")
+
+            output = f"{proc.stdout}\n{proc.stderr}"
+            self.assertIn("Open https://github.com/signup in your browser", output)
+            self.assertIn("GitHub account is required to continue. Re-run bootstrap after signup", output)
+            self.assertFalse(os.path.exists(py_log), "setup_auth should not run when GitHub account setup is blocked")
+
+    def test_bootstrap_can_wait_for_github_account_creation_then_continue(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            fake_bin, git_log, py_log = self._make_fake_bin(tmpdir)
+            local_clone = os.path.join(tmpdir, "local-clone")
+            nested_dir = os.path.join(local_clone, "nested")
+            os.makedirs(os.path.join(local_clone, ".git"), exist_ok=True)
+            os.makedirs(os.path.join(local_clone, "scripts"), exist_ok=True)
+            os.makedirs(nested_dir, exist_ok=True)
+            with open(os.path.join(local_clone, "scripts", "setup_auth.py"), "w", encoding="utf-8") as f:
+                f.write("# test\n")
+            os.remove(os.path.join(fake_bin, "gh"))
+
+            gh_log = os.path.join(tmpdir, "gh.log")
+            auth_state_file = os.path.join(tmpdir, "gh-authenticated")
+            env = os.environ.copy()
+            env["PATH"] = f"{fake_bin}:/usr/bin:/bin:/usr/sbin:/sbin"
+            env["FAKE_GIT_LOG"] = git_log
+            env["FAKE_GH_LOG"] = gh_log
+            env["FAKE_GH_TEMPLATE"] = os.path.join(tmpdir, "gh-template")
+            env["FAKE_GH_AUTH_STATE_FILE"] = auth_state_file
+            env["FAKE_PY_LOG"] = py_log
+            env["FAKE_GIT_INSIDE_WORKTREE"] = "1"
+            env["FAKE_GIT_TOPLEVEL"] = local_clone
+
+            proc = subprocess.run(
+                ["bash", BOOTSTRAP_PATH],
+                input="y\nn\ny\ny\ny\n",
+                text=True,
+                capture_output=True,
+                cwd=nested_dir,
+                env=env,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=f"{proc.stdout}\n{proc.stderr}")
+
+            output = f"{proc.stdout}\n{proc.stderr}"
+            self.assertIn("Open https://github.com/signup in your browser", output)
+            self.assertIn("Detected package manager for automatic GitHub CLI install: Homebrew.", output)
+            self.assertIn("GitHub CLI installed.", output)
+
+            with open(gh_log, "r", encoding="utf-8") as f:
+                gh_calls = f.read()
+            self.assertIn("auth login --web --git-protocol https --scopes repo,workflow", gh_calls)
+
+            with open(py_log, "r", encoding="utf-8") as f:
+                py_calls = f.read()
+            self.assertIn(f"{local_clone}|scripts/setup_auth.py", py_calls)
+
+    def test_bootstrap_missing_gh_without_supported_package_manager_falls_back_cleanly(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            fake_bin, git_log, py_log = self._make_fake_bin(tmpdir)
+            local_clone = os.path.join(tmpdir, "local-clone")
+            nested_dir = os.path.join(local_clone, "nested")
+            os.makedirs(os.path.join(local_clone, ".git"), exist_ok=True)
+            os.makedirs(os.path.join(local_clone, "scripts"), exist_ok=True)
+            os.makedirs(nested_dir, exist_ok=True)
+            with open(os.path.join(local_clone, "scripts", "setup_auth.py"), "w", encoding="utf-8") as f:
+                f.write("# test\n")
+            os.remove(os.path.join(fake_bin, "gh"))
+            os.remove(os.path.join(fake_bin, "brew"))
+
+            env = os.environ.copy()
+            env["PATH"] = fake_bin
+            env["FAKE_GIT_LOG"] = git_log
+            env["FAKE_GH_LOG"] = os.path.join(tmpdir, "gh.log")
+            env["FAKE_GH_TEMPLATE"] = os.path.join(tmpdir, "gh-template")
+            env["FAKE_PY_LOG"] = py_log
+            env["FAKE_GIT_INSIDE_WORKTREE"] = "1"
+            env["FAKE_GIT_TOPLEVEL"] = local_clone
+
+            proc = subprocess.run(
+                ["/bin/bash", BOOTSTRAP_PATH],
+                input="y\ny\n",
+                text=True,
+                capture_output=True,
+                cwd=nested_dir,
+                env=env,
+                check=False,
+            )
+            self.assertNotEqual(proc.returncode, 0, msg=f"{proc.stdout}\n{proc.stderr}")
+
+            output = f"{proc.stdout}\n{proc.stderr}"
+            self.assertIn("No supported package manager was detected for automatic GitHub CLI install.", output)
+            self.assertIn("Supported automatic install paths: Homebrew, apt-get, dnf, yum, pacman, zypper, apk, snap.", output)
+            self.assertIn("Automatic GitHub CLI installation is not available in this environment.", output)
+            self.assertFalse(os.path.exists(py_log), "setup_auth should not run when GitHub CLI install is blocked")
 
     def test_bootstrap_keeps_fresh_clone_default_target(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
