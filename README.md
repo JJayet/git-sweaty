@@ -34,7 +34,7 @@ Run this in PowerShell.
 irm https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.ps1 | iex
 ```
 
-The Windows wrapper checks whether WSL and a Linux distro are ready first. If they are not, it will explain the next step and can start `wsl --install -d Ubuntu` for you when run from an elevated PowerShell session. After that, setup continues inside WSL.
+The Windows wrapper checks whether WSL and a Linux distro are ready first. If they are not, it can ask for administrator permission and reopen PowerShell with a normal Windows permission prompt so it can start `wsl --install -d Ubuntu` for you. After that, setup continues inside WSL.
 
 You will need a GitHub account. If GitHub CLI (`gh`) is not installed yet, the bootstrap script will detect a supported package manager, offer to install it, and then walk you through GitHub sign-in. On Windows, this happens inside WSL.
 

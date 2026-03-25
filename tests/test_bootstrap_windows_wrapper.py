@@ -16,13 +16,17 @@ class BootstrapWindowsWrapperTests(unittest.TestCase):
         self.assertIn("wsl.exe --install -d Ubuntu", wrapper)
         self.assertIn("wsl.exe -l -q", wrapper)
         self.assertIn("wsl.exe bash -lc", wrapper)
+        self.assertIn("Start-Process -FilePath \"powershell.exe\"", wrapper)
+        self.assertIn("-Verb RunAs", wrapper)
         self.assertIn("https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.sh", wrapper)
+        self.assertIn("https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.ps1", wrapper)
 
     def test_readme_points_windows_quick_start_to_powershell_wrapper(self) -> None:
         with open(README_PATH, "r", encoding="utf-8") as f:
             readme = f.read()
 
         self.assertIn("scripts/bootstrap.ps1", readme)
+        self.assertIn("Windows permission prompt", readme)
 
 
 if __name__ == "__main__":

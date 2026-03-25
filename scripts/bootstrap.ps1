@@ -6,6 +6,7 @@ param(
     [string[]]$SetupArgs
 )
 
+$WrapperUrl = "https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.ps1"
 $BootstrapUrl = "https://raw.githubusercontent.com/aspain/git-sweaty/main/scripts/bootstrap.sh"
 
 function Write-Info {
@@ -59,6 +60,36 @@ function Join-BashArgs {
     return ($quoted -join " ")
 }
 
+function Join-PowerShellArgs {
+    param([string[]]$Items)
+
+    $quoted = @()
+    foreach ($item in $Items) {
+        if ($null -eq $item) {
+            continue
+        }
+        $quoted += "'" + ($item -replace "'", "''") + "'"
+    }
+    return ($quoted -join " ")
+}
+
+function Invoke-ElevatedSelf {
+    $argsString = Join-PowerShellArgs $SetupArgs
+    $command = "& ([scriptblock]::Create((Invoke-RestMethod -UseBasicParsing '$WrapperUrl')))"
+    if (-not [string]::IsNullOrWhiteSpace($argsString)) {
+        $command = "$command $argsString"
+    }
+
+    Write-Info "Windows needs administrator permission once to install WSL and Ubuntu."
+    Write-Info "A Windows permission prompt will open now."
+    $process = Start-Process -FilePath "powershell.exe" `
+        -Verb RunAs `
+        -ArgumentList @("-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", $command) `
+        -Wait `
+        -PassThru
+    exit $process.ExitCode
+}
+
 function Invoke-WslInstall {
     Write-Info "Running: wsl --install -d Ubuntu"
     & wsl.exe --install -d Ubuntu
@@ -81,7 +112,10 @@ function Ensure-WslReady {
                 Invoke-WslInstall
             }
         } else {
-            Write-Info "Run PowerShell as Administrator once and execute: wsl --install -d Ubuntu"
+            if (Read-YesNo "WSL is not installed. Allow this script to reopen PowerShell with administrator permission and install Ubuntu now?" "Y") {
+                Invoke-ElevatedSelf
+            }
+            Write-Info "Open PowerShell as Administrator and execute: wsl --install -d Ubuntu"
         }
         throw "WSL is required before continuing."
     }
@@ -95,7 +129,10 @@ function Ensure-WslReady {
                 Invoke-WslInstall
             }
         } else {
-            Write-Info "Run PowerShell as Administrator once and execute: wsl --install -d Ubuntu"
+            if (Read-YesNo "Ubuntu is not installed yet. Allow this script to reopen PowerShell with administrator permission and install it now?" "Y") {
+                Invoke-ElevatedSelf
+            }
+            Write-Info "Open PowerShell as Administrator and execute: wsl --install -d Ubuntu"
         }
         throw "A WSL distro is required before continuing."
     }
