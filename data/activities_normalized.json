@@ -12348,5 +12348,18 @@
     "start_date_local": "2026-03-24T09:49:00Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-03-25",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "17858813707",
+    "moving_time": 642.0,
+    "name": "Yoga de nuit",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-03-25T22:52:26Z",
+    "type": "Yoga",
+    "year": 2026
   }
 ]
