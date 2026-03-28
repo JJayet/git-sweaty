@@ -12387,5 +12387,18 @@
     "start_date_local": "2026-03-26T16:04:03Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-03-27",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "17881079690",
+    "moving_time": 1242.0,
+    "name": "HIIT de nuit",
+    "raw_activity_type": "Workout",
+    "raw_type": "HighIntensityIntervalTraining",
+    "start_date_local": "2026-03-27T21:55:33Z",
+    "type": "HighIntensityIntervalTraining",
+    "year": 2026
   }
 ]
