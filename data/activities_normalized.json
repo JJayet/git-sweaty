@@ -12400,5 +12400,18 @@
     "start_date_local": "2026-03-27T21:55:33Z",
     "type": "HighIntensityIntervalTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-03-28",
+    "distance": 3197.8,
+    "elevation_gain": 73.0,
+    "id": "17892467342",
+    "moving_time": 1070.0,
+    "name": "On d\u00e9crasse les jambes, les ampoules me laissent tranquille",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-28T19:42:34Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
