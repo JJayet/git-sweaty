@@ -8603,6 +8603,15 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/17905396508",
       "year": 2026
+    },
+    {
+      "date": "2026-03-30",
+      "hour": 22,
+      "name": "Yoga de nuit",
+      "subtype": "Yoga",
+      "type": "Yoga",
+      "url": "https://www.strava.com/activities/17917099122",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16657,11 +16666,20 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 642.0
+        },
+        "2026-03-30": {
+          "activity_ids": [
+            "17917099122"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 638.0
         }
       }
     }
   },
-  "generated_at": "2026-03-30T15:26:57.228036+00:00",
+  "generated_at": "2026-03-31T15:25:54.191464+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
