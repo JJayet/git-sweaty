@@ -8612,6 +8612,15 @@
       "type": "Yoga",
       "url": "https://www.strava.com/activities/17917099122",
       "year": 2026
+    },
+    {
+      "date": "2026-03-31",
+      "hour": 17,
+      "name": "Entra\u00eenement aux poids dans l'apr\u00e8s-midi",
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "url": "https://www.strava.com/activities/17926473757",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16635,6 +16644,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 973.0
+        },
+        "2026-03-31": {
+          "activity_ids": [
+            "17926473757"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 643.0
         }
       },
       "Workout": {
@@ -16679,7 +16697,7 @@
       }
     }
   },
-  "generated_at": "2026-03-31T15:25:54.191464+00:00",
+  "generated_at": "2026-04-01T15:28:12.401093+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
