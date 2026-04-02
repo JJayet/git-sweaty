@@ -12452,5 +12452,18 @@
     "start_date_local": "2026-03-31T17:39:58Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-04-01",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "17942228035",
+    "moving_time": 647.0,
+    "name": "HIIT de nuit",
+    "raw_activity_type": "Workout",
+    "raw_type": "HighIntensityIntervalTraining",
+    "start_date_local": "2026-04-01T21:34:44Z",
+    "type": "HighIntensityIntervalTraining",
+    "year": 2026
   }
 ]
