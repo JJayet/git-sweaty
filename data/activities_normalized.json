@@ -12465,5 +12465,18 @@
     "start_date_local": "2026-04-01T21:34:44Z",
     "type": "HighIntensityIntervalTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-04-02",
+    "distance": 6004.9,
+    "elevation_gain": 147.0,
+    "id": "17952005874",
+    "moving_time": 2151.0,
+    "name": "Malade \ud83e\udd27",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-02T17:56:29Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
