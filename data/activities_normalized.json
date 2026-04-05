@@ -12491,5 +12491,31 @@
     "start_date_local": "2026-04-03T22:10:03Z",
     "type": "Yoga",
     "year": 2026
+  },
+  {
+    "date": "2026-04-04",
+    "distance": 2471.8,
+    "elevation_gain": 54.0,
+    "id": "17977593681",
+    "moving_time": 2889.0,
+    "name": "Chillax zone 2 avec le chien",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-04-04T17:31:46Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-05",
+    "distance": 8391.1,
+    "elevation_gain": 395.0,
+    "id": "17988356281",
+    "moving_time": 3385.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-05T15:15:55Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
