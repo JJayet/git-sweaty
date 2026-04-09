@@ -12543,5 +12543,18 @@
     "start_date_local": "2026-04-07T22:45:28Z",
     "type": "HighIntensityIntervalTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-04-08",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18032608378",
+    "moving_time": 1684.0,
+    "name": "Yoga de nuit",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-04-08T21:57:25Z",
+    "type": "Yoga",
+    "year": 2026
   }
 ]
