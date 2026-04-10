@@ -12556,5 +12556,18 @@
     "start_date_local": "2026-04-08T21:57:25Z",
     "type": "Yoga",
     "year": 2026
+  },
+  {
+    "date": "2026-04-09",
+    "distance": 5381.8,
+    "elevation_gain": 39.0,
+    "id": "18046130592",
+    "moving_time": 1655.0,
+    "name": "Course \u00e0 pied de nuit",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-04-09T22:21:55Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
