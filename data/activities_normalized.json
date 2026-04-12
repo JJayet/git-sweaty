@@ -12595,5 +12595,44 @@
     "start_date_local": "2026-04-11T09:59:13Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-04-11",
+    "distance": 8975.0,
+    "elevation_gain": 565.2,
+    "id": "18068396677",
+    "moving_time": 4314.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-11T13:50:51Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-11",
+    "distance": 16412.0,
+    "elevation_gain": 710.0,
+    "id": "18068433950",
+    "moving_time": 8450.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-11T15:06:32Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-12",
+    "distance": 28940.0,
+    "elevation_gain": 1304.0,
+    "id": "18079700889",
+    "moving_time": 15710.0,
+    "name": "Trail le matin",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-12T10:23:12Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]

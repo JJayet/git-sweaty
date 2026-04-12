@@ -8720,6 +8720,33 @@
       "type": "Walk",
       "url": "https://www.strava.com/activities/18062673435",
       "year": 2026
+    },
+    {
+      "date": "2026-04-11",
+      "hour": 13,
+      "name": "Trail dans l'apr\u00e8s-midi",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18068396677",
+      "year": 2026
+    },
+    {
+      "date": "2026-04-11",
+      "hour": 15,
+      "name": "Trail dans l'apr\u00e8s-midi",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18068433950",
+      "year": 2026
+    },
+    {
+      "date": "2026-04-12",
+      "hour": 10,
+      "name": "Trail le matin",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18079700889",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16649,6 +16676,25 @@
           "distance": 5671.5,
           "elevation_gain": 143.0,
           "moving_time": 2128.0
+        },
+        "2026-04-11": {
+          "activity_ids": [
+            "18068396677",
+            "18068433950"
+          ],
+          "count": 2,
+          "distance": 25387.0,
+          "elevation_gain": 1275.2,
+          "moving_time": 12764.0
+        },
+        "2026-04-12": {
+          "activity_ids": [
+            "18079700889"
+          ],
+          "count": 1,
+          "distance": 28940.0,
+          "elevation_gain": 1304.0,
+          "moving_time": 15710.0
         }
       },
       "Walk": {
@@ -16895,7 +16941,7 @@
       }
     }
   },
-  "generated_at": "2026-04-11T15:09:52.875569+00:00",
+  "generated_at": "2026-04-12T15:12:37.542175+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
