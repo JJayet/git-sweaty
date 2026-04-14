@@ -12634,5 +12634,18 @@
     "start_date_local": "2026-04-12T10:23:12Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-04-13",
+    "distance": 5605.0,
+    "elevation_gain": 136.0,
+    "id": "18093181518",
+    "moving_time": 2433.0,
+    "name": "Lemele il est trop beau \u2764\ufe0f",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-13T17:44:53Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
