@@ -8801,6 +8801,24 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/18140791338",
       "year": 2026
+    },
+    {
+      "date": "2026-04-18",
+      "hour": 10,
+      "name": "Marche le matin",
+      "subtype": "Walk",
+      "type": "Walk",
+      "url": "https://www.strava.com/activities/18154933963",
+      "year": 2026
+    },
+    {
+      "date": "2026-04-18",
+      "hour": 14,
+      "name": "Randonn\u00e9e dans l'apr\u00e8s-midi",
+      "subtype": "Hike",
+      "type": "Hike",
+      "url": "https://www.strava.com/activities/18159756125",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -15967,6 +15985,15 @@
           "distance": 5011.9,
           "elevation_gain": 229.0,
           "moving_time": 6516.0
+        },
+        "2026-04-18": {
+          "activity_ids": [
+            "18159756125"
+          ],
+          "count": 1,
+          "distance": 4673.7,
+          "elevation_gain": 323.0,
+          "moving_time": 6174.0
         }
       },
       "Rowing": {
@@ -16859,6 +16886,15 @@
           "distance": 5450.0,
           "elevation_gain": 62.0,
           "moving_time": 2863.0
+        },
+        "2026-04-18": {
+          "activity_ids": [
+            "18154933963"
+          ],
+          "count": 1,
+          "distance": 1843.6,
+          "elevation_gain": 28.0,
+          "moving_time": 2388.0
         }
       },
       "WeightTraining": {
@@ -17049,7 +17085,7 @@
       }
     }
   },
-  "generated_at": "2026-04-17T15:22:10.014225+00:00",
+  "generated_at": "2026-04-18T15:13:16.975125+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",

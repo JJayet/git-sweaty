@@ -12712,5 +12712,31 @@
     "start_date_local": "2026-04-17T06:43:56Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-04-18",
+    "distance": 1843.6,
+    "elevation_gain": 28.0,
+    "id": "18154933963",
+    "moving_time": 2388.0,
+    "name": "Marche le matin",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-04-18T10:35:49Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-18",
+    "distance": 4673.7,
+    "elevation_gain": 323.0,
+    "id": "18159756125",
+    "moving_time": 6174.0,
+    "name": "Randonn\u00e9e dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-04-18T14:54:34Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
