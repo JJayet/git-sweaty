@@ -12738,5 +12738,18 @@
     "start_date_local": "2026-04-18T14:54:34Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-04-19",
+    "distance": 5481.3,
+    "elevation_gain": 288.0,
+    "id": "18170938952",
+    "moving_time": 5940.0,
+    "name": "Randonn\u00e9e le midi",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-04-19T11:17:40Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]

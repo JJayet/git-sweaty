@@ -8819,6 +8819,15 @@
       "type": "Hike",
       "url": "https://www.strava.com/activities/18159756125",
       "year": 2026
+    },
+    {
+      "date": "2026-04-19",
+      "hour": 11,
+      "name": "Randonn\u00e9e le midi",
+      "subtype": "Hike",
+      "type": "Hike",
+      "url": "https://www.strava.com/activities/18170938952",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -15994,6 +16003,15 @@
           "distance": 4673.7,
           "elevation_gain": 323.0,
           "moving_time": 6174.0
+        },
+        "2026-04-19": {
+          "activity_ids": [
+            "18170938952"
+          ],
+          "count": 1,
+          "distance": 5481.3,
+          "elevation_gain": 288.0,
+          "moving_time": 5940.0
         }
       },
       "Rowing": {
@@ -17085,7 +17103,7 @@
       }
     }
   },
-  "generated_at": "2026-04-18T15:13:16.975125+00:00",
+  "generated_at": "2026-04-19T15:13:18.728708+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
