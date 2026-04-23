@@ -12777,5 +12777,31 @@
     "start_date_local": "2026-04-21T17:34:12Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-04-22",
+    "distance": 5646.6,
+    "elevation_gain": 144.0,
+    "id": "18214050656",
+    "moving_time": 1899.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-22T17:56:50Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-23",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18221105126",
+    "moving_time": 3579.0,
+    "name": "Full Body 3",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-04-23T06:13:59Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
