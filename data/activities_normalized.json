@@ -12816,5 +12816,31 @@
     "start_date_local": "2026-04-24T15:31:09Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-04-25",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18246697688",
+    "moving_time": 3922.0,
+    "name": "Full Body 1",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-04-25T05:59:50Z",
+    "type": "WeightTraining",
+    "year": 2026
+  },
+  {
+    "date": "2026-04-25",
+    "distance": 9373.8,
+    "elevation_gain": 396.0,
+    "id": "18252610303",
+    "moving_time": 3823.0,
+    "name": "L\u2019accident b\u00eate",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-04-25T14:51:50Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
