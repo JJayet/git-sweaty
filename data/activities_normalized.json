@@ -12868,5 +12868,18 @@
     "start_date_local": "2026-04-27T04:16:34Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-04-28",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18286938863",
+    "moving_time": 3287.0,
+    "name": "Full Body 3",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-04-28T04:37:48Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
