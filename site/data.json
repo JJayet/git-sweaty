@@ -8927,6 +8927,15 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/18294343911",
       "year": 2026
+    },
+    {
+      "date": "2026-04-29",
+      "hour": 17,
+      "name": "Trail dans l'apr\u00e8s-midi",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18308440824",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16983,6 +16992,15 @@
           "distance": 6204.4,
           "elevation_gain": 157.0,
           "moving_time": 2399.0
+        },
+        "2026-04-29": {
+          "activity_ids": [
+            "18308440824"
+          ],
+          "count": 1,
+          "distance": 8332.2,
+          "elevation_gain": 390.0,
+          "moving_time": 3669.0
         }
       },
       "Walk": {
@@ -17301,7 +17319,7 @@
       }
     }
   },
-  "generated_at": "2026-04-29T15:38:07.380241+00:00",
+  "generated_at": "2026-04-30T15:34:09.687163+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
