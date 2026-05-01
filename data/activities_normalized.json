@@ -12907,5 +12907,44 @@
     "start_date_local": "2026-04-29T17:46:06Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-04-30",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18323977752",
+    "moving_time": 471.0,
+    "name": "Yoga de nuit",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-04-30T22:47:00Z",
+    "type": "Yoga",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-01",
+    "distance": 4544.2,
+    "elevation_gain": 54.0,
+    "id": "18328481905",
+    "moving_time": 4655.0,
+    "name": "Marche le matin",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-05-01T08:28:10Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-01",
+    "distance": 9732.6,
+    "elevation_gain": 380.0,
+    "id": "18332839849",
+    "moving_time": 3756.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-01T14:21:54Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
