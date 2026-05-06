@@ -12985,5 +12985,18 @@
     "start_date_local": "2026-05-04T20:41:57Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-05-05",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18391354273",
+    "moving_time": 333.0,
+    "name": "Entra\u00eenement de nuit",
+    "raw_activity_type": "Workout",
+    "raw_type": "Workout",
+    "start_date_local": "2026-05-05T23:36:13Z",
+    "type": "Workout",
+    "year": 2026
   }
 ]
