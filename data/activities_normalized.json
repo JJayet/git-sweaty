@@ -12998,5 +12998,18 @@
     "start_date_local": "2026-05-05T23:36:13Z",
     "type": "Workout",
     "year": 2026
+  },
+  {
+    "date": "2026-05-07",
+    "distance": 5511.3,
+    "elevation_gain": 136.0,
+    "id": "18411986226",
+    "moving_time": 1926.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-07T14:25:32Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
