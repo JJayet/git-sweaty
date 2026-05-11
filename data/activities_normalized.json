@@ -13031,10 +13031,23 @@
     "elevation_gain": 385.0,
     "id": "18452696713",
     "moving_time": 3168.0,
-    "name": "Trail dans l'apr\u00e8s-midi",
+    "name": "Bonnes sensations \u00e0 5 jours de la course",
     "raw_activity_type": "Run",
     "raw_type": "TrailRun",
     "start_date_local": "2026-05-10T14:40:22Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-11",
+    "distance": 5003.1,
+    "elevation_gain": 109.0,
+    "id": "18465172899",
+    "moving_time": 2140.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-11T16:52:12Z",
     "type": "TrailRun",
     "year": 2026
   }
