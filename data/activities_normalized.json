@@ -13050,5 +13050,31 @@
     "start_date_local": "2026-05-11T16:52:12Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-05-14",
+    "distance": 3824.5,
+    "elevation_gain": 35.0,
+    "id": "18506424919",
+    "moving_time": 1401.0,
+    "name": "Trail en soir\u00e9e",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-14T18:11:46Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-15",
+    "distance": 55863.2,
+    "elevation_gain": 1745.0,
+    "id": "18516503553",
+    "moving_time": 27514.0,
+    "name": "Volvic VVX - DNF",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-15T06:00:49Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
