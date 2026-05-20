@@ -13089,5 +13089,44 @@
     "start_date_local": "2026-05-19T05:24:02Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-05-20",
+    "distance": 4392.7,
+    "elevation_gain": 73.0,
+    "id": "18579164424",
+    "moving_time": 4220.0,
+    "name": "Marche le matin",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-05-20T10:30:45Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-20",
+    "distance": 1196.2,
+    "elevation_gain": 53.0,
+    "id": "18583253514",
+    "moving_time": 695.0,
+    "name": "Marche dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-05-20T17:30:30Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-20",
+    "distance": 4193.5,
+    "elevation_gain": 91.0,
+    "id": "18583253534",
+    "moving_time": 1376.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-05-20T17:07:27Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]

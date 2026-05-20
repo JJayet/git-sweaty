@@ -9062,6 +9062,33 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/18563229557",
       "year": 2026
+    },
+    {
+      "date": "2026-05-20",
+      "hour": 10,
+      "name": "Marche le matin",
+      "subtype": "Walk",
+      "type": "Walk",
+      "url": "https://www.strava.com/activities/18579164424",
+      "year": 2026
+    },
+    {
+      "date": "2026-05-20",
+      "hour": 17,
+      "name": "Marche dans l'apr\u00e8s-midi",
+      "subtype": "Walk",
+      "type": "Walk",
+      "url": "https://www.strava.com/activities/18583253514",
+      "year": 2026
+    },
+    {
+      "date": "2026-05-20",
+      "hour": 17,
+      "name": "Trail dans l'apr\u00e8s-midi",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18583253534",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -17208,6 +17235,15 @@
           "distance": 55863.2,
           "elevation_gain": 1745.0,
           "moving_time": 27514.0
+        },
+        "2026-05-20": {
+          "activity_ids": [
+            "18583253534"
+          ],
+          "count": 1,
+          "distance": 4193.5,
+          "elevation_gain": 91.0,
+          "moving_time": 1376.0
         }
       },
       "Walk": {
@@ -17300,6 +17336,16 @@
           "distance": 4544.2,
           "elevation_gain": 54.0,
           "moving_time": 4655.0
+        },
+        "2026-05-20": {
+          "activity_ids": [
+            "18579164424",
+            "18583253514"
+          ],
+          "count": 2,
+          "distance": 5588.9,
+          "elevation_gain": 126.0,
+          "moving_time": 4915.0
         }
       },
       "WeightTraining": {
@@ -17571,7 +17617,7 @@
       }
     }
   },
-  "generated_at": "2026-05-19T16:06:43.625006+00:00",
+  "generated_at": "2026-05-20T16:13:49.074405+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
