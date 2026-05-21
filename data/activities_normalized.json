@@ -13128,5 +13128,18 @@
     "start_date_local": "2026-05-20T17:07:27Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-05-21",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18590489763",
+    "moving_time": 5506.0,
+    "name": "Entra\u00eenement aux poids le matin",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-05-21T04:49:47Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
