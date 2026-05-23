@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T15:54:03.815418+00:00",
+  "generated_at": "2026-05-23T15:23:07.982060+00:00",
   "years": {
     "2022": {
       "Hike": {
@@ -7348,6 +7348,15 @@
           "distance": 3452.0,
           "elevation_gain": 76.0,
           "moving_time": 1975.0
+        },
+        "2026-05-22": {
+          "activity_ids": [
+            "18610375733"
+          ],
+          "count": 1,
+          "distance": 4030.4,
+          "elevation_gain": 23.0,
+          "moving_time": 1052.0
         }
       },
       "TrailRun": {
@@ -8255,6 +8264,15 @@
           "distance": 5588.9,
           "elevation_gain": 126.0,
           "moving_time": 4915.0
+        },
+        "2026-05-22": {
+          "activity_ids": [
+            "18610375684"
+          ],
+          "count": 1,
+          "distance": 1399.1,
+          "elevation_gain": 42.0,
+          "moving_time": 809.0
         }
       },
       "WeightTraining": {
@@ -8455,6 +8473,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 5506.0
+        },
+        "2026-05-23": {
+          "activity_ids": [
+            "18615496701"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 4049.0
         }
       },
       "Workout": {

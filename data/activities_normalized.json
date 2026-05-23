@@ -13141,5 +13141,44 @@
     "start_date_local": "2026-05-21T04:49:47Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-05-22",
+    "distance": 1399.1,
+    "elevation_gain": 42.0,
+    "id": "18610375684",
+    "moving_time": 809.0,
+    "name": "Marche en soir\u00e9e",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-05-22T18:13:46Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-22",
+    "distance": 4030.4,
+    "elevation_gain": 23.0,
+    "id": "18610375733",
+    "moving_time": 1052.0,
+    "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-22T17:52:23Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-23",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18615496701",
+    "moving_time": 4049.0,
+    "name": "Entra\u00eenement aux poids de nuit",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-05-23T03:29:33Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]

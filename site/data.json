@@ -9098,6 +9098,33 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/18590489763",
       "year": 2026
+    },
+    {
+      "date": "2026-05-22",
+      "hour": 18,
+      "name": "Marche en soir\u00e9e",
+      "subtype": "Walk",
+      "type": "Walk",
+      "url": "https://www.strava.com/activities/18610375684",
+      "year": 2026
+    },
+    {
+      "date": "2026-05-22",
+      "hour": 17,
+      "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+      "subtype": "Run",
+      "type": "Run",
+      "url": "https://www.strava.com/activities/18610375733",
+      "year": 2026
+    },
+    {
+      "date": "2026-05-23",
+      "hour": 3,
+      "name": "Entra\u00eenement aux poids de nuit",
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "url": "https://www.strava.com/activities/18615496701",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16448,6 +16475,15 @@
           "distance": 3452.0,
           "elevation_gain": 76.0,
           "moving_time": 1975.0
+        },
+        "2026-05-22": {
+          "activity_ids": [
+            "18610375733"
+          ],
+          "count": 1,
+          "distance": 4030.4,
+          "elevation_gain": 23.0,
+          "moving_time": 1052.0
         }
       },
       "TrailRun": {
@@ -17355,6 +17391,15 @@
           "distance": 5588.9,
           "elevation_gain": 126.0,
           "moving_time": 4915.0
+        },
+        "2026-05-22": {
+          "activity_ids": [
+            "18610375684"
+          ],
+          "count": 1,
+          "distance": 1399.1,
+          "elevation_gain": 42.0,
+          "moving_time": 809.0
         }
       },
       "WeightTraining": {
@@ -17555,6 +17600,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 5506.0
+        },
+        "2026-05-23": {
+          "activity_ids": [
+            "18615496701"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 4049.0
         }
       },
       "Workout": {
@@ -17635,7 +17689,7 @@
       }
     }
   },
-  "generated_at": "2026-05-22T15:54:03.831372+00:00",
+  "generated_at": "2026-05-23T15:23:07.997972+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
