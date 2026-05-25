@@ -9125,6 +9125,24 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/18615496701",
       "year": 2026
+    },
+    {
+      "date": "2026-05-24",
+      "hour": 18,
+      "name": "Trail en soir\u00e9e",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/18638474789",
+      "year": 2026
+    },
+    {
+      "date": "2026-05-24",
+      "hour": 23,
+      "name": "Entra\u00eenement aux poids de nuit",
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "url": "https://www.strava.com/activities/18641334663",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -17289,6 +17307,15 @@
           "distance": 4193.5,
           "elevation_gain": 91.0,
           "moving_time": 1376.0
+        },
+        "2026-05-24": {
+          "activity_ids": [
+            "18638474789"
+          ],
+          "count": 1,
+          "distance": 5261.8,
+          "elevation_gain": 136.0,
+          "moving_time": 1795.0
         }
       },
       "Walk": {
@@ -17609,6 +17636,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 4049.0
+        },
+        "2026-05-24": {
+          "activity_ids": [
+            "18641334663"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 4955.0
         }
       },
       "Workout": {
@@ -17689,7 +17725,7 @@
       }
     }
   },
-  "generated_at": "2026-05-24T15:23:58.239966+00:00",
+  "generated_at": "2026-05-25T15:57:37.317742+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
