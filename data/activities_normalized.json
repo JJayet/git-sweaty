@@ -13206,5 +13206,18 @@
     "start_date_local": "2026-05-24T23:52:37Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-05-26",
+    "distance": 3207.2,
+    "elevation_gain": 76.0,
+    "id": "18662156382",
+    "moving_time": 2443.0,
+    "name": "Randonn\u00e9e dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-05-26T16:18:16Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
