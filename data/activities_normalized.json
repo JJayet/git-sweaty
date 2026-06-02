@@ -13258,5 +13258,18 @@
     "start_date_local": "2026-05-31T16:48:33Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-06-02",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18750774484",
+    "moving_time": 4847.0,
+    "name": "Entra\u00eenement aux poids le matin",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-06-02T05:14:29Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
