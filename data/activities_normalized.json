@@ -13310,5 +13310,18 @@
     "start_date_local": "2026-06-11T05:12:45Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-06-14",
+    "distance": 5261.1,
+    "elevation_gain": 132.0,
+    "id": "18917285571",
+    "moving_time": 1830.0,
+    "name": "Premi\u00e8re sortie quasi sans douleur depuis Volvic",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-06-14T14:43:14Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
