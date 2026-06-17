@@ -9242,6 +9242,15 @@
       "type": "Run",
       "url": "https://www.strava.com/activities/18945459114",
       "year": 2026
+    },
+    {
+      "date": "2026-06-17",
+      "hour": 17,
+      "name": "Afternoon Run",
+      "subtype": "Run",
+      "type": "Run",
+      "url": "https://www.strava.com/activities/18959683678",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16639,6 +16648,15 @@
           "distance": 4309.0,
           "elevation_gain": 98.0,
           "moving_time": 1362.0
+        },
+        "2026-06-17": {
+          "activity_ids": [
+            "18959683678"
+          ],
+          "count": 1,
+          "distance": 3609.5,
+          "elevation_gain": 8.0,
+          "moving_time": 1014.0
         }
       },
       "TrailRun": {
@@ -17925,7 +17943,7 @@
       }
     }
   },
-  "generated_at": "2026-06-16T16:32:31.494458+00:00",
+  "generated_at": "2026-06-17T16:15:58.300658+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
