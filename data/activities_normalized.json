@@ -13375,5 +13375,18 @@
     "start_date_local": "2026-06-18T05:37:03Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-06-20",
+    "distance": 5821.4,
+    "elevation_gain": 144.0,
+    "id": "18993165272",
+    "moving_time": 4207.0,
+    "name": "Marche le matin",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-06-20T09:06:18Z",
+    "type": "Walk",
+    "year": 2026
   }
 ]
