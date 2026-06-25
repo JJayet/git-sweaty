@@ -9305,6 +9305,24 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/19030367417",
       "year": 2026
+    },
+    {
+      "date": "2026-06-24",
+      "hour": 17,
+      "name": "Fractionn\u00e9 par beaucoup trop chaud",
+      "subtype": "Run",
+      "type": "Run",
+      "url": "https://www.strava.com/activities/19050899814",
+      "year": 2026
+    },
+    {
+      "date": "2026-06-25",
+      "hour": 5,
+      "name": "Morning Weight Training",
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "url": "https://www.strava.com/activities/19057124581",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -16711,6 +16729,15 @@
           "distance": 3609.5,
           "elevation_gain": 8.0,
           "moving_time": 1014.0
+        },
+        "2026-06-24": {
+          "activity_ids": [
+            "19050899814"
+          ],
+          "count": 1,
+          "distance": 6531.8,
+          "elevation_gain": 5.0,
+          "moving_time": 1911.0
         }
       },
       "TrailRun": {
@@ -17971,6 +17998,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 2945.0
+        },
+        "2026-06-25": {
+          "activity_ids": [
+            "19057124581"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 2310.0
         }
       },
       "Workout": {
@@ -18051,7 +18087,7 @@
       }
     }
   },
-  "generated_at": "2026-06-24T15:46:17.849172+00:00",
+  "generated_at": "2026-06-25T15:50:55.618661+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",

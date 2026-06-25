@@ -13440,5 +13440,31 @@
     "start_date_local": "2026-06-23T05:00:37Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-06-24",
+    "distance": 6531.8,
+    "elevation_gain": 5.0,
+    "id": "19050899814",
+    "moving_time": 1911.0,
+    "name": "Fractionn\u00e9 par beaucoup trop chaud",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-24T17:30:24Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-25",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "19057124581",
+    "moving_time": 2310.0,
+    "name": "Morning Weight Training",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-06-25T05:23:35Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
