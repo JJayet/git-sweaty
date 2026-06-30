@@ -13492,5 +13492,18 @@
     "start_date_local": "2026-06-26T11:38:27Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-06-30",
+    "distance": 6246.2,
+    "elevation_gain": 36.0,
+    "id": "19120232853",
+    "moving_time": 1847.0,
+    "name": "Toujours un plaisir de courir \u00e0 Paris",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-30T07:38:19Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
