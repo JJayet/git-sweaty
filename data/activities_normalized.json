@@ -13505,5 +13505,31 @@
     "start_date_local": "2026-06-30T07:38:19Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-02",
+    "distance": 3568.1,
+    "elevation_gain": 120.0,
+    "id": "19152546137",
+    "moving_time": 1429.0,
+    "name": "Afternoon Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-07-02T17:57:36Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-03",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "19158695159",
+    "moving_time": 3982.0,
+    "name": "Entra\u00eenement aux poids le matin",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-07-03T05:29:17Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
