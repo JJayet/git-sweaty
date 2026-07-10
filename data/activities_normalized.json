@@ -13544,5 +13544,18 @@
     "start_date_local": "2026-07-07T05:00:14Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-07-09",
+    "distance": 12456.2,
+    "elevation_gain": 436.0,
+    "id": "19247195675",
+    "moving_time": 4917.0,
+    "name": "Village Trail La Colle sur Loup",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-07-09T19:59:04Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
