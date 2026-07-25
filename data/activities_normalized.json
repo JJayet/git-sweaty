@@ -13661,5 +13661,44 @@
     "start_date_local": "2026-07-21T05:27:02Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-07-24",
+    "distance": 12623.3,
+    "elevation_gain": 502.0,
+    "id": "19446989474",
+    "moving_time": 6087.0,
+    "name": "Afternoon Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-07-24T15:41:50Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-25",
+    "distance": 521.9,
+    "elevation_gain": 33.0,
+    "id": "19461005474",
+    "moving_time": 322.0,
+    "name": "Afternoon Walk",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-07-25T17:30:02Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-25",
+    "distance": 4968.3,
+    "elevation_gain": 111.0,
+    "id": "19461005509",
+    "moving_time": 1806.0,
+    "name": "Afternoon Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-07-25T16:59:53Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
