@@ -13791,5 +13791,31 @@
     "start_date_local": "2026-08-03T19:41:31Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-08-05",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "19607516219",
+    "moving_time": 4512.0,
+    "name": "Morning Weight Training",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-08-05T05:47:22Z",
+    "type": "WeightTraining",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-05",
+    "distance": 6071.3,
+    "elevation_gain": 256.0,
+    "id": "19613281147",
+    "moving_time": 2722.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-05T15:34:03Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
