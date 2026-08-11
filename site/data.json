@@ -9611,6 +9611,15 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/19676583047",
       "year": 2026
+    },
+    {
+      "date": "2026-08-10",
+      "hour": 18,
+      "name": "Evening Trail Run",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/19683885123",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -18002,6 +18011,15 @@
           "distance": 8352.6,
           "elevation_gain": 386.0,
           "moving_time": 3805.0
+        },
+        "2026-08-10": {
+          "activity_ids": [
+            "19683885123"
+          ],
+          "count": 1,
+          "distance": 6009.2,
+          "elevation_gain": 145.0,
+          "moving_time": 2379.0
         }
       },
       "Walk": {
@@ -18663,7 +18681,7 @@
       }
     }
   },
-  "generated_at": "2026-08-10T15:51:38.676698+00:00",
+  "generated_at": "2026-08-11T15:51:57.821594+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",

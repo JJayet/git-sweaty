@@ -13882,5 +13882,18 @@
     "start_date_local": "2026-08-10T06:45:20Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-08-10",
+    "distance": 6009.2,
+    "elevation_gain": 145.0,
+    "id": "19683885123",
+    "moving_time": 2379.0,
+    "name": "Evening Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-10T18:23:34Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
