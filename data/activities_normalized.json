@@ -13960,5 +13960,31 @@
     "start_date_local": "2026-08-13T16:09:45Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-08-14",
+    "distance": 6038.5,
+    "elevation_gain": 152.0,
+    "id": "19741119962",
+    "moving_time": 2207.0,
+    "name": "On se sent bien malgr\u00e9 la chaleur",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-14T17:53:16Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-15",
+    "distance": 23849.2,
+    "elevation_gain": 1933.0,
+    "id": "19753738508",
+    "moving_time": 21058.0,
+    "name": "Morning Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-15T07:30:02Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
