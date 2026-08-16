@@ -13979,12 +13979,12 @@
     "distance": 23849.2,
     "elevation_gain": 1933.0,
     "id": "19753738508",
-    "moving_time": 21058.0,
-    "name": "Morning Trail Run",
-    "raw_activity_type": "Run",
-    "raw_type": "TrailRun",
+    "moving_time": 28060.0,
+    "name": "L\u2019enfer de l\u2019orage",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
     "start_date_local": "2026-08-15T07:30:02Z",
-    "type": "TrailRun",
+    "type": "Hike",
     "year": 2026
   }
 ]
