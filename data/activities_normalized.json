@@ -13986,5 +13986,31 @@
     "start_date_local": "2026-08-15T07:30:02Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-08-16",
+    "distance": 6499.5,
+    "elevation_gain": 263.0,
+    "id": "19769680545",
+    "moving_time": 4176.0,
+    "name": "Afternoon Walk",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-08-16T17:43:29Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-17",
+    "distance": 6752.8,
+    "elevation_gain": 3.0,
+    "id": "19775097570",
+    "moving_time": 1944.0,
+    "name": "VO2 Max",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-17T07:37:57Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
