@@ -14038,5 +14038,18 @@
     "start_date_local": "2026-08-19T04:54:26Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-08-21",
+    "distance": 5181.0,
+    "elevation_gain": 58.0,
+    "id": "19834308491",
+    "moving_time": 1634.0,
+    "name": "Lunch Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-21T11:07:44Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
