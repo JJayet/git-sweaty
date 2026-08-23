@@ -9728,6 +9728,15 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/19834308491",
       "year": 2026
+    },
+    {
+      "date": "2026-08-22",
+      "hour": 20,
+      "name": "10k Z2",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/19855381327",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -18191,6 +18200,15 @@
           "distance": 5181.0,
           "elevation_gain": 58.0,
           "moving_time": 1634.0
+        },
+        "2026-08-22": {
+          "activity_ids": [
+            "19855381327"
+          ],
+          "count": 1,
+          "distance": 10149.5,
+          "elevation_gain": 110.0,
+          "moving_time": 3451.0
         }
       },
       "Walk": {
@@ -18897,7 +18915,7 @@
       }
     }
   },
-  "generated_at": "2026-08-22T15:11:56.024716+00:00",
+  "generated_at": "2026-08-23T15:13:33.932868+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",

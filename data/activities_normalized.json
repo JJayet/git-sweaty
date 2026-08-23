@@ -14051,5 +14051,18 @@
     "start_date_local": "2026-08-21T11:07:44Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-08-22",
+    "distance": 10149.5,
+    "elevation_gain": 110.0,
+    "id": "19855381327",
+    "moving_time": 3451.0,
+    "name": "10k Z2",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-22T20:20:32Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
