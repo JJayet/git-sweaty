@@ -14142,5 +14142,18 @@
     "start_date_local": "2026-08-30T05:33:49Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-08-31",
+    "distance": 5188.9,
+    "elevation_gain": 116.0,
+    "id": "19974866535",
+    "moving_time": 2329.0,
+    "name": "R\u00e9cup Z1",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-08-31T13:18:45Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
