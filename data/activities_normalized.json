@@ -14168,5 +14168,18 @@
     "start_date_local": "2026-09-01T15:43:08Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-09-02",
+    "distance": 6393.2,
+    "elevation_gain": 152.0,
+    "id": "20003299826",
+    "moving_time": 3254.0,
+    "name": "Avec Stefanski",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-09-02T11:54:01Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
