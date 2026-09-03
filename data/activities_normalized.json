@@ -14181,5 +14181,44 @@
     "start_date_local": "2026-09-02T11:54:01Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-09-03",
+    "distance": 1079.0,
+    "elevation_gain": 58.0,
+    "id": "20020815855",
+    "moving_time": 637.0,
+    "name": "Afternoon Walk",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-09-03T16:33:58Z",
+    "type": "Walk",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-03",
+    "distance": 4629.0,
+    "elevation_gain": 69.0,
+    "id": "20020815862",
+    "moving_time": 1628.0,
+    "name": "Afternoon Trail Run",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-09-03T16:06:23Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-03",
+    "distance": 1079.0,
+    "elevation_gain": 54.9,
+    "id": "20020995971",
+    "moving_time": 637.0,
+    "name": "Marche dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-09-03T16:33:58Z",
+    "type": "Walk",
+    "year": 2026
   }
 ]
