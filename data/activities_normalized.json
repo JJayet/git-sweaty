@@ -14311,5 +14311,18 @@
     "start_date_local": "2026-09-08T17:38:58Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-09-09",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20101298749",
+    "moving_time": 4697.0,
+    "name": "Entra\u00eenement aux poids le midi",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-09-09T12:14:27Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
