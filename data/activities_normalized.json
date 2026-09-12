@@ -14324,5 +14324,18 @@
     "start_date_local": "2026-09-09T12:14:27Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-09-12",
+    "distance": 21587.5,
+    "elevation_gain": 521.0,
+    "id": "20145848439",
+    "moving_time": 3822.0,
+    "name": "Sortie en v\u00e9lo \u00e9lectrique dans l'apr\u00e8s-midi",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-09-12T16:19:01Z",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
