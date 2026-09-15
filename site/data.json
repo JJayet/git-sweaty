@@ -9935,6 +9935,15 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/20169245476",
       "year": 2026
+    },
+    {
+      "date": "2026-09-15",
+      "hour": 6,
+      "name": "Trail le matin",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/20179976975",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -18516,6 +18525,15 @@
           "distance": 5853.4,
           "elevation_gain": 136.0,
           "moving_time": 4046.0
+        },
+        "2026-09-15": {
+          "activity_ids": [
+            "20179976975"
+          ],
+          "count": 1,
+          "distance": 6173.6,
+          "elevation_gain": 85.0,
+          "moving_time": 2019.0
         }
       },
       "Walk": {
@@ -19295,7 +19313,7 @@
       }
     }
   },
-  "generated_at": "2026-09-14T19:41:43.854155+00:00",
+  "generated_at": "2026-09-15T18:35:39.367019+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
