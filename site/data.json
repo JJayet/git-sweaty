@@ -9944,6 +9944,15 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/20179976975",
       "year": 2026
+    },
+    {
+      "date": "2026-09-17",
+      "hour": 6,
+      "name": "Entra\u00eenement aux poids le matin",
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "url": "https://www.strava.com/activities/20209330641",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19233,6 +19242,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 4697.0
+        },
+        "2026-09-17": {
+          "activity_ids": [
+            "20209330641"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 4751.0
         }
       },
       "Workout": {
@@ -19313,7 +19331,7 @@
       }
     }
   },
-  "generated_at": "2026-09-16T18:33:51.767401+00:00",
+  "generated_at": "2026-09-17T18:41:54.847223+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
