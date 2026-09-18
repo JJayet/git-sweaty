@@ -9953,6 +9953,15 @@
       "type": "WeightTraining",
       "url": "https://www.strava.com/activities/20209330641",
       "year": 2026
+    },
+    {
+      "date": "2026-09-18",
+      "hour": 11,
+      "name": "Lunch Trail Run",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/20224511832",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -18543,6 +18552,15 @@
           "distance": 6173.6,
           "elevation_gain": 85.0,
           "moving_time": 2019.0
+        },
+        "2026-09-18": {
+          "activity_ids": [
+            "20224511832"
+          ],
+          "count": 1,
+          "distance": 4278.2,
+          "elevation_gain": 85.0,
+          "moving_time": 1472.0
         }
       },
       "Walk": {
@@ -19331,7 +19349,7 @@
       }
     }
   },
-  "generated_at": "2026-09-17T18:41:54.847223+00:00",
+  "generated_at": "2026-09-18T17:58:43.342386+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
