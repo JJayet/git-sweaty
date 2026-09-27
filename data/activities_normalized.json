@@ -14441,5 +14441,31 @@
     "start_date_local": "2026-09-26T14:39:47Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-09-26",
+    "distance": 34646.0,
+    "elevation_gain": 1170.8,
+    "id": "20341601852",
+    "moving_time": 15592.0,
+    "name": "Evening Workout",
+    "raw_activity_type": "Workout",
+    "raw_type": "Workout",
+    "start_date_local": "2026-09-26T20:44:07Z",
+    "type": "Workout",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-27",
+    "distance": 34939.4,
+    "elevation_gain": 1239.0,
+    "id": "20350154258",
+    "moving_time": 16804.0,
+    "name": "Trail des gorges",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-09-27T08:01:59Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
