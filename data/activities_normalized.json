@@ -14519,5 +14519,31 @@
     "start_date_local": "2026-10-08T14:19:59Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-10-08",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20507722361",
+    "moving_time": 480.0,
+    "name": "GOWOD - Routine Sommeil",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-10-08T23:04:07Z",
+    "type": "Yoga",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-09",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20512063255",
+    "moving_time": 900.0,
+    "name": "GOWOD - Mobilit\u00e9 Quotidienne",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-10-09T09:47:49Z",
+    "type": "Yoga",
+    "year": 2026
   }
 ]

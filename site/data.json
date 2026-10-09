@@ -10052,6 +10052,24 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/20502008993",
       "year": 2026
+    },
+    {
+      "date": "2026-10-08",
+      "hour": 23,
+      "name": "GOWOD - Routine Sommeil",
+      "subtype": "Yoga",
+      "type": "Yoga",
+      "url": "https://www.strava.com/activities/20507722361",
+      "year": 2026
+    },
+    {
+      "date": "2026-10-09",
+      "hour": 9,
+      "name": "GOWOD - Mobilit\u00e9 Quotidienne",
+      "subtype": "Yoga",
+      "type": "Yoga",
+      "url": "https://www.strava.com/activities/20512063255",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19525,11 +19543,29 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 471.0
+        },
+        "2026-10-08": {
+          "activity_ids": [
+            "20507722361"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 480.0
+        },
+        "2026-10-09": {
+          "activity_ids": [
+            "20512063255"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 900.0
         }
       }
     }
   },
-  "generated_at": "2026-10-08T20:22:46.158261+00:00",
+  "generated_at": "2026-10-09T19:55:25.830398+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
