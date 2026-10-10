@@ -14545,5 +14545,44 @@
     "start_date_local": "2026-10-09T09:47:49Z",
     "type": "Yoga",
     "year": 2026
+  },
+  {
+    "date": "2026-10-10",
+    "distance": 6227.8,
+    "elevation_gain": 155.0,
+    "id": "20529468095",
+    "moving_time": 3326.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-10-10T15:57:30Z",
+    "type": "TrailRun",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-10",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20529993903",
+    "moving_time": 480.0,
+    "name": "GOWOD - Trail R\u00e9cup\u00e9ration",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-10-10T17:32:11Z",
+    "type": "Yoga",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-10",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20532291650",
+    "moving_time": 1320.0,
+    "name": "GOWOD - Routine Sommeil",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-10-10T20:54:09Z",
+    "type": "Yoga",
+    "year": 2026
   }
 ]
