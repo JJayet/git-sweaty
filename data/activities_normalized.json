@@ -14584,5 +14584,18 @@
     "start_date_local": "2026-10-10T20:54:09Z",
     "type": "Yoga",
     "year": 2026
+  },
+  {
+    "date": "2026-10-11",
+    "distance": 7108.3,
+    "elevation_gain": 731.0,
+    "id": "20537119992",
+    "moving_time": 4025.0,
+    "name": "Trail le matin",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-10-11T09:02:05Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
