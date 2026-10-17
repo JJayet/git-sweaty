@@ -14623,5 +14623,18 @@
     "start_date_local": "2026-10-16T14:54:41Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-10-17",
+    "distance": 9202.0,
+    "elevation_gain": 110.0,
+    "id": "20621227005",
+    "moving_time": 3241.0,
+    "name": "On court avec la poussette",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-17T14:03:06Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
