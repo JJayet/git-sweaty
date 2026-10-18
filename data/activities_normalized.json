@@ -14636,5 +14636,18 @@
     "start_date_local": "2026-10-17T14:03:06Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-18",
+    "distance": 3263.1,
+    "elevation_gain": 76.0,
+    "id": "20634435607",
+    "moving_time": 1234.0,
+    "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-18T14:00:10Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
