@@ -14675,5 +14675,31 @@
     "start_date_local": "2026-10-23T11:17:19Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-10-23",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20704406548",
+    "moving_time": 480.0,
+    "name": "GOWOD - Mobilit\u00e9 Quotidienne",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-10-23T22:10:39Z",
+    "type": "Yoga",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-24",
+    "distance": 6868.2,
+    "elevation_gain": 84.0,
+    "id": "20713275153",
+    "moving_time": 2277.0,
+    "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-24T15:11:41Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
