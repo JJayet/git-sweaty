@@ -14695,11 +14695,24 @@
     "elevation_gain": 84.0,
     "id": "20713275153",
     "moving_time": 2277.0,
-    "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+    "name": "Course en poussette",
     "raw_activity_type": "Run",
     "raw_type": "Run",
     "start_date_local": "2026-10-24T15:11:41Z",
     "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-25",
+    "distance": 5396.0,
+    "elevation_gain": 125.0,
+    "id": "20726411966",
+    "moving_time": 1779.0,
+    "name": "Trail dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-10-25T14:31:06Z",
+    "type": "TrailRun",
     "year": 2026
   }
 ]
