@@ -14727,5 +14727,18 @@
     "start_date_local": "2026-10-30T15:00:00Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-02",
+    "distance": 13345.7,
+    "elevation_gain": 445.0,
+    "id": "20831142374",
+    "moving_time": 4909.0,
+    "name": "R\u00e9cup post-hyrox",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-11-02T16:03:55Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]
