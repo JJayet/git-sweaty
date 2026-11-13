@@ -14779,5 +14779,18 @@
     "start_date_local": "2026-11-11T16:15:37Z",
     "type": "TrailRun",
     "year": 2026
+  },
+  {
+    "date": "2026-11-13",
+    "distance": 6059.6,
+    "elevation_gain": 97.0,
+    "id": "20975715443",
+    "moving_time": 2002.0,
+    "name": "Trail en soir\u00e9e",
+    "raw_activity_type": "Run",
+    "raw_type": "TrailRun",
+    "start_date_local": "2026-11-13T20:06:29Z",
+    "type": "TrailRun",
+    "year": 2026
   }
 ]

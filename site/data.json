@@ -10232,6 +10232,15 @@
       "type": "TrailRun",
       "url": "https://www.strava.com/activities/20948285699",
       "year": 2026
+    },
+    {
+      "date": "2026-11-13",
+      "hour": 20,
+      "name": "Trail en soir\u00e9e",
+      "subtype": "TrailRun",
+      "type": "TrailRun",
+      "url": "https://www.strava.com/activities/20975715443",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19020,6 +19029,15 @@
           "distance": 4945.6,
           "elevation_gain": 80.0,
           "moving_time": 1503.0
+        },
+        "2026-11-13": {
+          "activity_ids": [
+            "20975715443"
+          ],
+          "count": 1,
+          "distance": 6059.6,
+          "elevation_gain": 97.0,
+          "moving_time": 2002.0
         }
       },
       "Walk": {
@@ -19881,7 +19899,7 @@
       }
     }
   },
-  "generated_at": "2026-11-12T21:39:35.343860+00:00",
+  "generated_at": "2026-11-13T21:05:33.572852+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
