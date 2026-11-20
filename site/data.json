@@ -10259,6 +10259,15 @@
       "type": "Run",
       "url": "https://www.strava.com/activities/21000059289",
       "year": 2026
+    },
+    {
+      "date": "2026-11-20",
+      "hour": 17,
+      "name": "Course \u00e0 pied dans l'apr\u00e8s-midi",
+      "subtype": "Run",
+      "type": "Run",
+      "url": "https://www.strava.com/activities/21060671845",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -17809,6 +17818,15 @@
           "distance": 4017.4,
           "elevation_gain": 78.0,
           "moving_time": 1395.0
+        },
+        "2026-11-20": {
+          "activity_ids": [
+            "21060671845"
+          ],
+          "count": 1,
+          "distance": 3376.5,
+          "elevation_gain": 111.0,
+          "moving_time": 1242.0
         }
       },
       "TrailRun": {
@@ -19935,7 +19953,7 @@
       }
     }
   },
-  "generated_at": "2026-11-19T22:30:47.009095+00:00",
+  "generated_at": "2026-11-20T22:03:29.209148+00:00",
   "other_bucket": "OtherSports",
   "profile_url": "https://www.strava.com/athletes/101971623",
   "repo": "JJayet/git-sweaty",
