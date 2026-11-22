@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T20:42:52.243902+00:00",
+  "generated_at": "2026-11-22T20:53:14.518882+00:00",
   "years": {
     "2022": {
       "Hike": {
@@ -7079,6 +7079,17 @@
           "distance": 21587.5,
           "elevation_gain": 521.0,
           "moving_time": 3822.0
+        }
+      },
+      "GravelRide": {
+        "2026-11-22": {
+          "activity_ids": [
+            "21083492513"
+          ],
+          "count": 1,
+          "distance": 3203.0,
+          "elevation_gain": 103.0,
+          "moving_time": 854.0
         }
       },
       "HighIntensityIntervalTraining": {

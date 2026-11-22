@@ -14870,5 +14870,18 @@
     "start_date_local": "2026-11-21T10:53:00Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-11-22",
+    "distance": 3203.0,
+    "elevation_gain": 103.0,
+    "id": "21083492513",
+    "moving_time": 854.0,
+    "name": "Gravel dans l'apr\u00e8s-midi",
+    "raw_activity_type": "Ride",
+    "raw_type": "GravelRide",
+    "start_date_local": "2026-11-22T13:49:40Z",
+    "type": "GravelRide",
+    "year": 2026
   }
 ]
